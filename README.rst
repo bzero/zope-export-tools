@@ -15,10 +15,14 @@ on what kind of object types you use.
 Installing
 ----------
 
-Build it in place::
+Clone this repository::
 
-  make
+  git clone git@github.com:bzero/zope-export-tools.git
+  cd zope-export-tools
 
+Install dependencies::
+
+  pip install -r requirements.txt
 
 Exporting objects to the filesystem
 -----------------------------------
