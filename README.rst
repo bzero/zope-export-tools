@@ -22,8 +22,8 @@ Clone this repository::
 
 Create virtual enviroment::
 
-  virtualenv venv
-  source venv/bin/activate
+  virtualenv python
+  source python/bin/activate
 
 Install dependencies::
 
