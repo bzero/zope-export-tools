@@ -20,6 +20,11 @@ Clone this repository::
   git clone git@github.com:bzero/zope-export-tools.git
   cd zope-export-tools
 
+Create virtual enviroment::
+
+  virtualenv venv
+  source venv/bin/activate
+
 Install dependencies::
 
   pip install -r requirements.txt
@@ -31,7 +36,7 @@ Method 1: WebDAV/FTP.  Not documented here.
 
 Method 2: create an export file from the ZMI, download it, run ::
 
-  bin/unpack-zexp filename.zexp [outdir]
+  python unpack-zexp.py filename.zexp [outdir]
 
 If outdir is omitted, you'll get filename without the extension.
 
@@ -44,7 +49,7 @@ Previewing changes
 After editing page templates/Python scripts on the file system, check if they
 work by doing ::
 
-  bin/render folder/subfolder [filename ...] [--o outdir]
+  python render.py folder/subfolder [filename ...] [--o outdir]
 
 If outdir is omitted, prints the results to stdout.
 
